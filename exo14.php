@@ -17,3 +17,4 @@ foreach($emails as $email){
     }
     echo "L'adresse $email est une adresse e-mail $pref"."valide<br>";
 }
+
