@@ -10,7 +10,7 @@ function alimenterListeDeroulante($elements){
     ?>
 
     <select name="sexe" id="sexe-select">
-        <option value="">Choisissez une option</option>
+        <option value="" selected disabled >Choisissez une option</option>
         <?php
             foreach($elements as $element){
                 echo "<option value='$element'>$element</option>";

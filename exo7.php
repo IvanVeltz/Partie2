@@ -21,7 +21,6 @@ function genererCheckbox($elements){
 
         ?>
     </fieldset>
-
     <?php
 }
 
