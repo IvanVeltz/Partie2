@@ -12,11 +12,11 @@ chaîne de caractère représentant une date.
 
 function formaterDateFr($date){
     $date = new DateTime($date);
-    // Permet d'indiquer que notre chaine de caractere est une date
-    $formatter = new IntlDateFormatter('fr',IntlDateFormatter::FULL, IntlDateFormatter::NONE);
+    // Creer une date à partir de notre chaine de caractere
+    $formater = new IntlDateFormatter('fr',IntlDateFormatter::FULL, IntlDateFormatter::NONE);
     // Créer le formateur de date avec la langue, le format de la date, le format de l'heure
-    echo $formatter->format($date);
-    // Utlise la fonction format du formatteur qui renvoie une chiane de caractere à partir d'une date
+    echo $formater->format($date);
+    // Utlise la fonction format de formater qui renvoie une chiane de caractere à partir d'une date
 }
 
 formaterDateFr("2018-02-23");
