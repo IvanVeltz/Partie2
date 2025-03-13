@@ -1,4 +1,4 @@
-<h1>Exercice 1</h1>
+<h1>Exercice 2</h1>
 
 <p>Soit le tableau suivant :
 $capitales =
@@ -10,12 +10,19 @@ Vous devrez appeler la fonction comme suit : afficherTableHTML($capitales);</p>
 
 <h2>Resultat</h2>
 
+<style type='text/css'>
+    table {border-collapse: collapse; text-align: left;}
+    th, td{border: 1px solid;padding: 0 1em}
+</style>
+
 <?php
 
 $capitales = ["France"=>"Paris","Allemagne"=>"Berlin","USA"=>"Washington","Italie"=>"Rome"];
 
+
 function afficherTableHTML($capitales){
     ksort($capitales)
+    // Trie le tableau selon la clé par ordre alphabétique
     ?>
     <table>
         <thead>
