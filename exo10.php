@@ -16,7 +16,7 @@ valeurs en paramètre ("Monsieur","Madame","Mademoiselle").
 function afficherInput($nomsInput){
     
         foreach($nomsInput as $nomInput){
-            echo "<label>$nomInput</label><br>";
+            echo "<label>$nomInput : </label><br>";
             echo "<input type='text'><br>";
         }
 }
@@ -24,7 +24,7 @@ function afficherInput($nomsInput){
 function alimenterListeDeroulante($elements){
     ?>
 
-    <select name="sexe" id="sexe-select">
+    <select name="" id="">
         <option value="" selected disabled >Choisissez une option</option>
         <?php
             foreach($elements as $element){
@@ -36,7 +36,7 @@ function alimenterListeDeroulante($elements){
     <?php
 }
 
-$nomsInput = ["nom", "prenom", "adresse e-mail", "ville", "sexe"];
+$nomsInput = ["Nom", "Prenom", "Adresse e-mail", "Ville", "Sexe"];
 $elements = ["Développeur Logiciel", "Designer Web", "Intégrateur", "Chef de projet"];
 ?>
 

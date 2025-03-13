@@ -16,8 +16,8 @@ function repeterImage($url, $n){
     <div style='display:flex;'>
     <?php
         for ($i=1; $i<=$n; $i++){
-            echo "<figure style='margin: 0;'>
-                    <img src='$url' alt=''>
+            echo "<figure style='margin: 0; '>
+                    <img src='$url' alt='Texte alternatif'>
                 </figure>";
         }
     ?>
