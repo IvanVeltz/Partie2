@@ -29,6 +29,7 @@ $capitales = [
     "Espagne"=>"Madrid"
 ];
 
+
 function afficherTableHTML($capitales){
     ksort($capitales)
     // Trie le tableau selon la clé par ordre alphabétique

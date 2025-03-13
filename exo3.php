@@ -5,4 +5,7 @@ dans un nouvel onglet (_blank).</p>
 
 <h2>Resultat</h2>
 
-<a href="https://elan-formation.fr/accueil" target="_blank">Lien vers le site Elan - Formation</a>
+<?php
+$lien = "https://elan-formation.fr/accueil";
+
+echo "<a href=$lien target='_blank'>Lien vers le site Elan - Formation</a>";
