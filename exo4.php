@@ -2,10 +2,10 @@
 
 <p>A partir de l’exercice 2, ajouter une colonne supplémentaire dans le tableau HTML qui contiendra
 le lien hypertexte de la page Wikipédia de la capitale (le lien hypertexte devra s’ouvrir dans un
-nouvel onglet et le tableau sera trié par ordre alphabétique de la capitale).
+nouvel onglet et le tableau sera trié par ordre alphabétique de la capitale).<br>
 
 On admet que l’URL de la page Wikipédia de la capitale adopte la forme :
-https://fr.wikipedia.org/wiki/
+https://fr.wikipedia.org/wiki/<br>
 
 Le tableau passé en argument sera le suivant :
 $capitales = ["France"=>"Paris","Allemagne"=>"Berlin",
@@ -38,7 +38,7 @@ function afficherTableHTML($capitales){
             <tr>
                 <th>Pays</th>
                 <th>Capitale</th>
-                <th>Lien Wiki</th>
+                <th>Lien wiki</th>
             </tr>
         </thead>
         <tbody>
@@ -48,7 +48,7 @@ function afficherTableHTML($capitales){
                 echo "<tr>
                         <td>".strtoupper($pays)."</td>
                         <td>$capitale</td>
-                        <td><a href='$lienWiki$capitale' target='_blank'>Wiki</a></td>
+                        <td><a href='$lienWiki$capitale' target='_blank'>Lien</a></td>
                     </tr>";
             }
         ?>
